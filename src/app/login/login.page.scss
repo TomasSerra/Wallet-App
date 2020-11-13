@@ -1,0 +1,48 @@
+.titulo
+{
+    text-align: center;
+    margin-top: 4%;
+}
+.nombreusuario
+{
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.contrasena
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.ingresar
+{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+    --background: rgb(3 83 43);
+    --background-activated: #2b8539;
+}
+
+.centrado
+{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.boton_centrado
+{
+    text-align: center;
+}
+
+.icono
+{
+    width: 300px;
+    height: auto;
+}
+
+.blanco
+{
+    --background: var(--background);
+}

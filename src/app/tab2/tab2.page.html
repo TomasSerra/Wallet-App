@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      Agregar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Agregar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <form (ngSubmit)="logForm()">
+      <ion-item  style="font-size:200%; margin-top: 5%; --background: var(--background);">
+      <ion-input value={{titulo}} required="true" placeholder="Titulo aqui" style="text-align:center;" [(ngModel)]=titulo [ngModelOptions]="{standalone: true}"></ion-input>
+      </ion-item>
+
+      <ion-segment value={{cuenta}} class="fondo_segmento" [(ngModel)]=cuenta [ngModelOptions]="{standalone: true}" mode="ios">
+        <ion-segment-button value="+" class="boton_segmento">
+          <div class="margenes_boton">
+            <ion-label>+</ion-label>
+          </div>
+        </ion-segment-button>
+        <ion-segment-button value="-" class="boton_segmento">
+          <div class="margenes_boton">
+            <ion-label>-</ion-label>
+          </div>
+        </ion-segment-button>
+      </ion-segment>
+
+      <ion-segment value={{divisa}} class="fondo_segmento" [(ngModel)]=divisa [ngModelOptions]="{standalone: true}" mode="ios">
+        <ion-segment-button value="$" class="boton_segmento">
+          <div class="margenes_boton">
+            <ion-label>$</ion-label>
+          </div>
+        </ion-segment-button>
+        <ion-segment-button value="USD" class="boton_segmento">
+          <div class="margenes_boton">
+            <ion-label>USD</ion-label>
+          </div>
+        </ion-segment-button>
+      </ion-segment>
+
+      <ion-item  lines="none" style="font-size:150%; --background: var(--background);" >
+        <ion-label>Plata</ion-label>
+        <ion-input value={{plata}} required="true" placeholder="Ingrese monto" style="text-align:right; margin-top: 5%; " type="number" [(ngModel)]=plata [ngModelOptions]="{standalone: true}"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none" style="font-size:150%; margin-top: 5%; margin-bottom: 5%; --background: var(--background);" >
+        <ion-label>Dia</ion-label>
+        <ion-datetime required="true" displayformat="DD MMMM YY" placeholder="Ingrese fecha" style="text-align:center;"  [(ngModel)]=dia [ngModelOptions]="{standalone: true}"></ion-datetime>
+      </ion-item>
+
+      <ion-button expand="block" type="submit"  color="primary" class="boton_enviar" style="font-weight: bold;" >Agregar</ion-button>
+    </form>
+    
+
+  <app-explore-container name="Tab 2 page"></app-explore-container>
+</ion-content>

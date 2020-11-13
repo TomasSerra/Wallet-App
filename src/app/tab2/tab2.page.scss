@@ -1,0 +1,31 @@
+.boton_segmento
+{
+    --indicator-color: rgba(24, 92, 48, 0.356);
+    font-size: 200%;
+}
+
+.fondo_segmento
+{
+    --background: var(--background);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5%;
+}
+
+.margenes_boton
+{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.card
+{
+    top:15%;
+}
+
+.boton_enviar
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+

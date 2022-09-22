@@ -3,13 +3,13 @@
 Mobile PWA Wallet hosted on Firebase, database and user authentication using Firebase.
 
 <h3>Login:</h3>
-<img src="login.png">
+<img src="login.png" width=100px>
 
 <h3>Register:</h3>
 <img src="register.png">
 
 <h3>Home:</h3>
-<img src="home.png">
+<img src="home.png" width=100px>
 
 <h3>Add transactions:</h3>
 <img src="add.png">
